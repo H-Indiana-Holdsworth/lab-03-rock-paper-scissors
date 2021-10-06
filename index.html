@@ -14,18 +14,46 @@
 
 <body>
 
-    <input type="radio" name="" id="rock-input">Rock
+    <header>
+        <title>
+            <h1>Rock, Paper, Scissors</h1>
+        </title>
+    </header>
 
-    <input type="radio" name="" id="paper-input">Paper
+<main>
 
-    <input type="radio" name="" id="scissors-input">Scissors
-
+    <section id="rules">
+        <h3>Game Rules:</h3>
+            <ul> 
+                <li>Rock beats scissors</li>
+                <li>Paper beats rock</li>
+                <li>Scissors beats paper</li>
+            </ul>
+    </section>
+    
+    <div id="options">
+        <label>
+            <input type="radio" name="rps" id="rock">
+            <img src="assets/rock.jpeg" alt="Dwayne Johnson" height="300px">
+        </label>
+        <label>
+            <input type="radio" name="rps" id="paper">
+            <img src="assets/paper.jpeg" alt="Paper man" height="300px">
+        </label>
+        <label>
+            <input type="radio" name="rps" id="scissors">
+            <img src="assets/scissor.jpeg" alt="Edward Scissorhands" height="300px">
+        </label>
+    </div>
     <button id="shoot-button">Shoot!</button>
 
-    <span id="game-result">You </span>
+    <span id="win-message">You won!</span>
+    <span id="loss-message">You lost</span>
+    
+    <p>Number of wins: <span id="wins">2</span></p>
+    <p>Number of losses: <span id="losses">2</span></p>
 
-    <p>Number of wins: <span id="win-number">2</span></p>
-    <p>Number of losses: <span id="loss-number">2</span></p>
+</main>
 
     <script type="module" src="./app.js"></script>
 </body>
