@@ -12,9 +12,9 @@ let losses = 0;
 let draws = 0;
 // set event listeners 
 shootButton.addEventListener('click', () => {
-  const selected = document.querySelector('input[type=radio]:checked');
-  if(!selected) {
-    return error.classList.remove('hidden');
+    const selected = document.querySelector('input[type=radio]:checked');
+    if(!selected) {
+      return error.classList.remove('hidden');
   }
   error.classList.add('hidden');
   const userThrow = selected.value;
