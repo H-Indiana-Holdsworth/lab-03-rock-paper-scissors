@@ -24,34 +24,38 @@
 
     <section id="rules">
         <h3>Game Rules:</h3>
-            <ul> 
-                <li>Rock beats scissors</li>
-                <li>Paper beats rock</li>
-                <li>Scissors beats paper</li>
-            </ul>
+           <ul>
+               <li>Rock beats scissors</li>
+               <li>Paper beats rock</li>
+               <li>Scissors beats paper</li>
+           </ul>
     </section>
     
     <div id="options">
         <label>
-            <input type="radio" name="rps" id="rock">
+            <input type="radio" name="rps" id="rock" value="rock">
             <img src="assets/rock.jpeg" alt="Dwayne Johnson" height="300px">
         </label>
         <label>
-            <input type="radio" name="rps" id="paper">
+            <input type="radio" name="rps" id="paper" value="paper">
             <img src="assets/paper.jpeg" alt="Paper man" height="300px">
         </label>
         <label>
-            <input type="radio" name="rps" id="scissors">
+            <input type="radio" name="rps" id="scissors" value="scissors">
             <img src="assets/scissor.jpeg" alt="Edward Scissorhands" height="300px">
         </label>
     </div>
+
+    <p id="error" class="hidden">You need to pick a character!</p>
+
     <button id="shoot-button">Shoot!</button>
 
-    <span id="win-message">You won!</span>
-    <span id="loss-message">You lost</span>
+    <span id="win-message"></span>
+    <span id="loss-message"></span>
     
-    <p>Number of wins: <span id="wins">2</span></p>
-    <p>Number of losses: <span id="losses">2</span></p>
+    <p>Number of wins: <span id="wins"></span></p>
+    <p>Number of losses: <span id="losses"></span></p>
+    <p>Number of draws: <span id="draws"></span></p>
 
 </main>
 

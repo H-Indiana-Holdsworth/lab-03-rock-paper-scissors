@@ -1,18 +1,18 @@
 export function getRandomThrow() {
-    return ['rock', 'paper', 'scissors'][Math.round(Math.random()) * 3];
+    return ['rock', 'paper', 'scissors'][Math.floor(Math.random() * 3)];
 };
-console.log(getRandomThrow());
-export function didUserWin(userChoice, computerChoice) {
-    if (userChoice === computerChoice) {
+
+export function didUserWin(userThrow, computerThrow) {
+    if (userThrow === computerThrow) {
         return 'Draw'
     }
-    else if (userChoice === 'rock' && computerChoice === 'scissors') {
+    else if (userThrow === 'rock' && computerThrow === 'scissors') {
         return true
     }
-    else if (userChoice === 'paper' && computerChoice === 'rock') {
+    else if (userThrow === 'paper' && computerThrow === 'rock') {
         return true
     }
-    else if (userChoice === 'scissors' && computerChoice === 'paper') {
+    else if (userThrow === 'scissors' && computerThrow === 'paper') {
         return true
     }
     else {

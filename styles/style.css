@@ -9,3 +9,12 @@ main {
     flex-direction: row;
     justify-items: center;
 }
+
+input {
+    display: none;
+    margin: 10px;
+}
+
+.hidden {
+    display: none;
+}
