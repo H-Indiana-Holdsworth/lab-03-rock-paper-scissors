@@ -2,8 +2,7 @@
 import { didUserWin, getRandomThrow } from './utils.js';
 
 const shootButton = document.getElementById('shoot-button');
-const winMessage = document.getElementById('win-message');
-const lossMessage = document.getElementById('loss-message');
+const result = document.getElementById('result');
 const numOfWins = document.getElementById('wins');
 const numOfLosses = document.getElementById('losses');
 const numOfDraws = document.getElementById('draws');
@@ -25,9 +24,9 @@ shootButton.addEventListener('click', () => {
       draws++;
   } else if (didUserWin(userThrow, computerThrow)) {
     wins++;
-    winMessage.textContent = `You beat the machine and won! You should be cast in Terminator. The computer threw ${computerThrow}.`;
+    result.textContent = `You beat the machine and won! You should be cast in Terminator. The computer threw ${computerThrow}.`;
   } else {
-    lossMessage.textContent = `You lost, you were outsmarted by a function that randomly selected a character...The computer threw ${computerThrow}.`
+    result.textContent = `You lost, you were outsmarted by a function that randomly selected a character...The computer threw ${computerThrow}.`
     losses++;
   } 
 

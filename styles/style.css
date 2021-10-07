@@ -1,3 +1,13 @@
+body {
+    font-family: 'Staatliches', cursive;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -10,11 +20,27 @@ main {
     justify-items: center;
 }
 
-input {
+input[type=radio] {
     display: none;
     margin: 10px;
 }
 
 .hidden {
     display: none;
+}
+
+img {
+    border: 3px solid gray;
+    padding: 15px;
+    margin: 10px;
+    filter: grayscale(100%)
+}
+
+input[type=radio]:checked + img {
+    border: 5px solid blue;
+    filter: grayscale(0%);
+}
+
+#error {
+    color: red;
 }
