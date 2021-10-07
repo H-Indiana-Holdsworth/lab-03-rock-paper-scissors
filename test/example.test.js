@@ -20,11 +20,11 @@ test('user: rock, computer: paper', (expect) => {
 
 test('user: paper, computer: rock', (expect) => {
 
-        const expected = false;
+    const expected = false;
 
-        const actual = didUserWin('paper', 'scissors');
+    const actual = didUserWin('paper', 'scissors');
 
-        expect.equal(actual, expected);
+    expect.equal(actual, expected);
 
 });
 
@@ -57,7 +57,7 @@ test('user: paper, computer: rock', (expect) => {
 
 test('user: scissors, computer: paper', (expect) => {
 
-    const expected = true
+    const expected = true;
 
     const actual = didUserWin('scissors', 'paper');
 
